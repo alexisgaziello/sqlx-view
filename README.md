@@ -2,16 +2,16 @@
 Minimal demo to test the rust SQLx macro query_as! on a postgres view fails.
 
 ### How to run?
-Assuming you have docker installed, run the script:
+Assuming you have docker and rust installed, run the script:
 
 ```shell
 bash ./run.sh
 ```
 
 This will:
-1. spin up a instance of postgres on localhost:5432.
-2. Initialize the database with a table + a view of that table
-3. Run cargo build
+1. Spin up a instance of postgres on `localhost:5432`
+2. Initialize the database with 1 table + 1 view of that table
+3. Run `cargo build`
 
 ### Result
 
