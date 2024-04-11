@@ -1,0 +1,15 @@
+version: "3"
+
+
+services:
+
+  db:
+    container_name: db
+    image: docker.io/bitnami/postgresql:14.4.0
+    environment:
+      POSTGRESQL_DATABASE: rust-bug
+      POSTGRESQL_USERNAME: root
+      POSTGRESQL_PASSWORD: postgres_password
+      POSTGRESQL_POSTGRES_PASSWORD: postgres_postgres_password
+    ports:
+      - "5432:5432"
